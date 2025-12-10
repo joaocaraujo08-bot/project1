@@ -1,0 +1,103 @@
+*{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 75px;
+    padding-left: 75px;
+    margin: 0;
+    text-align: center ;
+    align-items: center;
+    border-color: black;
+}
+#di{
+justify-content: center;
+text-align: center;
+align-items: center;
+background-color: darkgrey;
+margin-top: 120px;
+border: 5px solid ;
+  border-radius: 10px ;
+  padding: 5px rgb(12, 9, 9)216, 101, 101;
+  margin-bottom: 40px;
+  padding: 40px;
+}
+body{
+display: flex;
+  background-color: black;
+  background-repeat: no-repeat;
+   background-size: cover;
+   justify-content: center;
+text-align: center;
+align-items: center;
+}
+input{
+
+    margin-bottom: 10px;
+    border: 2px solid rgb(2, 1, 1);
+    border-radius: 5px;
+}
+ 
+#H2{
+color: #1C1C1C;
+font-family: sans-serif;
+
+
+}
+#select{
+    border: 3px solid rgb(22, 53, 190);
+    border-radius: 50px;
+}
+.h1t{
+    font-family: sans-serif;
+    color: #1C1C1C;
+}
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 800px;
+    }
+
+    textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid black;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 15px;
+    }
+
+ textarea:focus, select:focus {
+      border-color: #008CBA;
+      box-shadow: 0 0 5px black;
+      outline: none;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: orangered;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size:15px;
+    }
+
+    button:focus {
+      outline: none;
+      box-shadow: 0 0 5px orangered;
+    }
+
+option.personalizar-option{
+    appearance: none;
+    border: 1px solid blue;
+    background: white;
+}  
+option.personalizar-option:hover{
+    appearance: none;
+    color: black;
+}

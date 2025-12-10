@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/aluno.info/Desktop/Nova%20pasta%20(2)/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./iner.css">
+    <script src="./mercado.js"></script>
+    <title>Mercado</title>
+   
+  
+</head>
+<body>
+    <div id="di">
+        <h1 class="h1t"> Bem-vindo ao Pé de Moleque</h1>
+        <form name="form1">
+            <h2 id="H2">Coloque seus produtos acima:</h2>
+<br><br>
+            
+            <br><br>
+    <select name="sele1" id="sele" onchange="verificar()">
+        <option value="0">Selecione um chocolate </option>
+        <option value="4.50">chocolate 70%|4,50R$</option>
+        <option value="3.50">chocolate ao leite|3,50R$</option>
+        <option value="5.0">chocolate amargo|5R$</option>
+        <option value="3.0">morango com chocolate|3R$</option>
+        <option value="2.0">banana com chocolate|2R$</option>
+        <option value="11.0">uva com chocolate|11R$</option>
+        <option value="20.0">salada de frutas com nutella|20R$</option>
+    </select>
+     <br>
+     <br>
+   <select name="sele2" id="selex"  onchange="resultado()">
+        <option value="0">Selecione uma bebida</option>
+        <option value="5.50">coca cola/2L|5,50R$</option>
+        <option value="5.0" >suco-laranja/1L|5,0R$</option>
+        <option value="5.0">suco-melancia/1L|5,0R$</option>
+        <option value="">suco de uva/1L|4,0R$</option>
+        <option value="5.50">Guarana Antartica/2L|5R$</option>
+        <option value="15.0">suco-laranja/5L|15R$</option>
+
+   </select>
+    <br><br>
+    <select name="sele3" id="selec"  onchange="sorvete()">
+        <option value="0">Selecione um Sorvete</option>
+        <option value="12.50">sorvete-Completo</option>
+        <option value="4.80">flocos/2L|4,80R$</option>
+        <option value="4.0">morango/2L|4R$</option>
+        <option value="5.0">chocolate/2L|5R$</option>
+        <option value="3.0">baunilha/2L|3R$</option>
+        <option value="5.0">creme/2L|5R$</option>
+        <option value="6">cereja/2L|6R$</option>
+
+    </select>
+    <br><br>
+  <select name="sele4" id="seletu"  onchange="artesanal()">
+    <option value="0">Selecione um tipo de bolo</option>
+    <option value="3.50">bolo de fubá|3,50R$</option>
+    <option value="30.80"> Bolo de chocolate belga completo |30,80</option>
+    <option value="4.0">pedaço-bolo de cenoura|4R$</option>
+    <option value="8">bolo de cenoura inteiro|8R$</option>
+    <option value="3.0"> pedaço-bolo de morango|3R$</option>
+    <option value="6.0">bolo Completo de morango|6R$</option>
+
+
+  </select>
+    <br><br>
+ 
+
+
+<input type="text" name="resul" value="0" placeholder="preço total">
+<button onclick="compra();">Comprar</button>
+          
+
+ 
+        
+ 
+
+    
+        </form>
+
+       
+
+
+       
+
+
+
+
+    </div>
+  
+
+
+
+
+</body></html>

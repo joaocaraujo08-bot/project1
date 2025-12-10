@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/aluno.info/Desktop/Nova%20pasta%20(2)/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./iner.css">
+    <script src="./mercado.js"></script>
+    <title>Mercado</title>
+   
+  <script type="text/javascript">
+
+      
+function verificar(){
+    var select1 = document.getElementById('sele');
+    var value1 = select1.options[select1.selectedIndex].value;
+
+    document.form1.resul.value = parseFloat(document.form1.resul.value) + parseFloat(value1);
+
+    console.log(value1);
+
+    event.preventDefault();
+    //var soma = r.value + t.value;
+    //document.form1.resul.value = soma.value;
+}
+
+function resultado(){
+    let selec2 = document.getElementById('selex');
+    var value2 = selec2.options[selec2.selectedIndex].value;
+    document.form1.resul.value = parseFloat(document.form1.resul.value) + parseFloat(value2);
+    console.log(value2)
+    event.preventDefault();
+
+}
+
+function sorvete(){
+let selet3 = document.getElementById('selec');
+var value3 = selet3.options[selet3.selectedIndex].value;
+document.form1.resul.value = parseFloat(document.form1.resul.value) + parseFloat(value3);
+console.log(value3)
+// document.form1.resul.value = value3
+event.preventDefault();
+}
+
+
+function artesanal(){
+let seletu4 = document.getElementById('seletu');
+var value4 = seletu4.options[seletu4.selectedIndex].value;
+document.form1.resul.value = parseFloat(document.form1.resul.value) + parseFloat(value4);
+
+//document.form1.resul.value = value4;
+console.log(value4)
+
+event.preventDefault();
+}
+
+function doces(){
+let seletu5 = document.getElementById('seletu');
+var value5 = seletu5.options[seletu5.selectedIndex].value;
+document.form1.resul.value = parseFloat(document.form1.resul.value) + parseFloat(value5);
+
+//document.form1.resul.value = value5;
+console.log(value5)
+
+event.preventDefault();
+
+}
+function balas(){
+let seletu6 = document.getElementById('seletu');
+var value6 = seletu6.options[seletu6.selectedIndex].value;
+document.form1.resul.value = parseFloat(document.form1.resul.value) + parseFloat(value6);
+
+//document.form1.resul.value = value6;
+console.log(value6)
+
+event.preventDefault();
+
+}
+if( document.form1.resul.value == "" ||  document.form1.resul.value == 0  ){
+alert("Escolha o seu produto")
+
+}else{
+var c = document.getElementById("com")
+
+c.style = "Muito obrigado por comprar na Pé de Moleque"
+
+
+}
+event.preventDefault();{
+
+}
+
+compra()
+
+  </script>
+  <style>*{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 75px;
+    padding-left: 75px;
+    margin: 0;
+    text-align: center ;
+    align-items: center;
+    border-color: black;
+}
+#di{
+justify-content: center;
+text-align: center;
+align-items: center;
+background-color: darkgrey;
+margin-top: 120px;
+border: 5px solid ;
+  border-radius: 10px ;
+  padding: 5px rgb(12, 9, 9)216, 101, 101;
+  margin-bottom: 40px;
+  padding: 40px;
+}
+body{
+display: flex;
+  background-color: black;
+  background-repeat: no-repeat;
+   background-size: cover;
+   justify-content: center;
+text-align: center;
+align-items: center;
+}
+input{
+
+    margin-bottom: 10px;
+    border: 2px solid rgb(2, 1, 1);
+    border-radius: 5px;
+}
+ 
+#H2{
+color: #1C1C1C;
+font-family: sans-serif;
+
+
+}
+#select{
+    border: 3px solid rgb(22, 53, 190);
+    border-radius: 50px;
+}
+.h1t{
+    font-family: sans-serif;
+    color: #1C1C1C;
+}
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 800px;
+    }
+
+    textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid black;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 15px;
+    }
+
+ textarea:focus, select:focus {
+      border-color: #008CBA;
+      box-shadow: 0 0 5px black;
+      outline: none;
+      font-size: 15px;
+      background.option: brown ;
+    }
+
+    button {
+      background-color: orangered;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size:15px;
+    }
+
+    button:focus {
+      outline: none;
+      box-shadow: 0 0 5px orangered;
+    }
+
+</style>
+</head>
+<body>
+    <div id="di">
+         <h1 class="h1t"> Bem-vindo ao Pé de Moleque</h1>
+        <form name="form1">
+            <h2 id="H2">Coloque seus produtos abaixo:</h2>
+<br><br>
+            <br><br>
+    <select name="sele1" id="sele" onchange="verificar()">
+        <option value="0">Selecione um chocolate </option>
+        <option value="4.50">barra diamante negro- LACTA R$4,50</option>
+        <option value="3.50">chocolate ao leite- LACTA R$3,50</option>
+        <option value="5.0"> barra de chocolate meio amargo- garoto R$5,00</option>
+        <option value="1.50"> tortuguita R$1,50</option>
+        <option value="5.0"> caixa ferrero rocher R$5,00</option>
+        <option value="9.20">kinder ovo R$9,20</option>
+        <option value="20.0">nutella R$20</option>
+    </select>
+     <br>
+     <br>
+   <select name="sele2" id="selex"  onchange="resultado()">
+        <option value="0">Selecione uma bebida</option>
+        <option value="10.20">Coca-cola/2L R$10,20</option>
+        <option value="7.0" >Monster/473ml R$7,00</option>
+        <option value="5.0">Matte Leão/1,5L R$5,00</option>
+        <option value="6.0">Del valle/1L R$6,00</option>
+        <option value="9.00">Guaraná Antártica/2L R$9,00</option>
+        <option value="8.0">Itaipava/350ml R$8,00</option>
+        <option value="4.50">FANTA/350ml R$6,00</option> 
+        <option value="10.0">PEPSI/2L R$10,00</option>
+
+   </select>
+    <br><br>
+    <select name="sele3" id="selec"  onchange="sorvete()">
+        <option class = "personalizar-option" value="0">Selecione um Sorvete</option>
+        <option class = "personalizar-option" value="12.50">sorvete de pitaya/700ml R$12,50</option>
+        <option class = "personalizar-option" value="7.00">sorvete de flocos/1,5L R$7,00</option>
+        <option class = "personalizar-option" value="6.0">sorvete de morango/1,5L R$6,00</option>
+        <option class = "personalizar-option" value="6.0">sorvete de chocolate/1,5L R$7,00</option>
+        <option class = "personalizar-option" value="10.0">sorvete de açaí/2L R$10,00</option>
+        <option class = "personalizar-option" value="7.0">sorvete de creme/1,5L R$7,00</option>
+        <option class = "personalizar-option" value="6">napolitano/1,5L R$6,00</option>
+        <option class = "personalizar-option" value="28.00">sorvete 4 em 1 Nestlé/2L R$28,00</option>
+
+    </select>
+    <br><br>
+  <select name="sele4" id="seletu"  onchange="artesanal()">
+    <option value="0">Selecione um tipo de bolo</option>
+    <option value="3.50">bolo de fubá R$3,50</option>
+    <option value="30.80"> Bolo de chocolate belga R$30,80</option>
+    <option value="4.0"> Bolo de cenoura R$4,00</option>
+    <option value="3.0"> Bolinho Bauducco R$3,00</option>
+    <option value="3.0"> Bolo de morango R$3,00</option>
+    <option value="6.0">Bolo de RedVelvet R$6,00</option>
+
+
+  </select>
+    <br><br>
+    <select name="sele5" id="seletu"  onchange="doces()">
+    <option value="0">Selecione um tipo de doces artesanais</option>
+    <option value="3.50">Pé de moleque R$10,00</option>
+    <option value="30.80"> Bananada R$3,80</option>
+    <option value="4.0">cocada R$4,00</option>
+    <option value="8">doce de leite R$3,00</option>
+    <option value="3.0">bem-casado R$8,00</option>
+    <option value="6.0">maria-mole R$6,00</option>
+    <option value="3,80">Donut R$3,80</option>
+
+
+  </select>
+    <br><br>
+     <select name="sele6" id="seletu"  onchange="balas()">
+    <option value="0">Selecione um tipo de balas e chicletes</option>
+    <option value="4.35">Bala Fini R$4,35</option>
+    <option value="3.80">Bala Mentos R$3,80</option>
+    <option value="4.0">Bala Butter Toffees R$4,00</option>
+    <option value="2.0">Bala Fruit-tella R$2,00</option>
+    <option value="8.0">Bala 7Belo R$8,00</option>
+    <option value="6.0">Bala Florestal R$6,00</option>
+    <option value="1.50">Bubbaloo R$1,50</option>
+    <option value="2.00">Plutonita R$2,00</option>
+    <option value="3.00">HALLS R$3,00</option>
+ 
+
+
+<input type="text" name="resul" value="0" placeholder="preço total">
+<button onclick="compra();">Comprar</button>
+          
+
+    
+        </form>
+       
+
+
+       
+
+
+    </div>
+  
+
+
+
+
+</body></html>
