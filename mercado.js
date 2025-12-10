@@ -53,5 +53,6 @@ c.innerHTML = "Muito obrigado por comprar na Pé de Moleque"
 }
 event.preventDefault();
 
+
 }
 compra() 
